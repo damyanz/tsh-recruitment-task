@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "name": "Unbranded Rubber Soap",
+  "description": "Voluptate iure illo ipsa vero ut dicta deserunt nulla.",
+  "rating": 3,
+  "image": "https://picsum.photos/640/480",
+  "active": true,
+  "promo": false
+}
