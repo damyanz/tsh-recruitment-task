@@ -1,0 +1,6 @@
+{
+  "env": {
+    "host": "http://localhost:3000/",
+    "api": "https://join-tsh-api-staging.herokuapp.com"
+  }
+}
