@@ -1,8 +1,10 @@
 {
-  "name": "my-app",
+  "name": "tsh-recruitment-task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-hook/window-size": "^3.0.7",
+    "@tailwindcss/line-clamp": "^0.2.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -14,7 +16,7 @@
     "query-string": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-query": "^3.19.1",
+    "react-query": "^3.19.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "smoothscroll-polyfill": "^0.4.4",
@@ -50,17 +52,39 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.2.1",
-    "@types/react-router-dom": "^5.1.8",
     "@types/smoothscroll-polyfill": "^0.3.1",
     "autoprefixer": "^10.3.1",
     "chokidar": "^3.5.2",
+    "chokidar-cli": "^2.1.0",
     "concurrently": "^6.2.0",
     "cross-env": "^7.0.3",
+    "import-sort-style-module-alias": "^1.1.0",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "prettier": "^2.3.2",
     "prettier-plugin-import-sort": "^0.0.7",
-    "tailwindcss": "^2.2.7"
+    "source-map-explorer": "^2.5.2",
+    "tailwindcss": "^2.2.6",
+    "@types/react-router-dom": "^5.1.8"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module-alias",
+      "parser": "typescript",
+      "options": {
+        "alias": [
+          "app",
+          "pages",
+          "components",
+          "providers",
+          "routing",
+          "helpers",
+          "interfaces",
+          "hooks",
+          "styles",
+          "assets"
+        ]
+      }
+    }
   }
 }
