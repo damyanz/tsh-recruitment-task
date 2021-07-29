@@ -17,7 +17,7 @@ function Pagination({
   );
 
   return (
-    <nav className="flex max-w-full overflow-x-auto text-sm font-semibold select-none sm:overflow-x-visible">
+    <nav className="flex items-center flex-shrink-0 h-5 max-w-full overflow-auto text-sm font-semibold select-none">
       <button
         className="mr-8 disabled:text-gray-500 disabled:cursor-not-allowed"
         disabled={activePage === 1}
@@ -25,7 +25,7 @@ function Pagination({
       >
         First
       </button>
-      <ul className="flex space-x-3 sm:space-x-4">
+      <ul className="flex space-x-4">
         {pages.map(page =>
           page ? (
             <li key={`pagination-${name}-${page}`}>
